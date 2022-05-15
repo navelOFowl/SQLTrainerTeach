@@ -1,0 +1,85 @@
+﻿<Page x:Class="SQLTrainerTeach.PageConnect"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SQLTrainerTeach"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="500"
+      Title="PageConnect" Background="#C0C0C0">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="2">
+            <Border Margin="10,10" BorderThickness="3,3,0,0" BorderBrush="#969696"></Border>
+            <Border Margin="10,10" BorderThickness="2,2,0,0" BorderBrush="#494949"></Border>
+            <Border Margin="10,10" BorderThickness="1,1,0,0" BorderBrush="Black"></Border>
+            <Border Margin="10,10" BorderThickness="0,0,3,3" BorderBrush="#C4C4C4"></Border>
+            <Border Margin="10,10" BorderThickness="0,0,2,2" BorderBrush="#DFDFDF"></Border>
+            <Border Margin="10,10" BorderThickness="0,0,1,1" BorderBrush="#EFEFEF"></Border>
+        </Grid>
+
+        <TextBox Name="TBTask" TextWrapping="Wrap" Height="60" Width="450" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,15,0,0"></TextBox>
+
+        <TextBox Name="TBLVFirst" Height="20" Width="170" VerticalAlignment="Top" Margin="0,80,0,0"></TextBox>
+        <ListBox Name="LBFirst" Width="170" Height="150" Margin="0,110,0,0" FontFamily="Arial"></ListBox>
+        <Button Name="ButLVFirst" Width="30" Height="20" FontFamily="Arial" VerticalAlignment="Top" Margin="0,104,40,0" Click="ButLVFirst_Click">V</Button>
+        <Button Name="ButDelFirst" Width="30" Height="20" FontFamily="Arial" VerticalAlignment="Top" Margin="50,104,0,0" Click="ButDelFirst_Click">X</Button>
+        
+        <Button Name="ButCreate" Grid.ColumnSpan="2" Width="65" Height="25" FontFamily="Arial" Click="ButCreate_Click">Записать</Button>
+
+        <TextBox Name="TBLVSecond" Height="20" Width="170" Grid.Column="1" VerticalAlignment="Top" Margin="0,80,0,0"></TextBox>
+        <ListBox Name="LBSecond" Width="170" Height="150" Margin="0,110,0,0" Grid.Column="1" FontFamily="Arial"></ListBox>
+        <Button Name="ButLVSecond" Grid.Column="1" Width="30" Height="20" FontFamily="Arial" VerticalAlignment="Top" Margin="0,104,40,0" Click="ButLVSecond_Click">V</Button>
+        <Button Name="ButDelSecond" Grid.Column="1" Width="30" Height="20" FontFamily="Arial" VerticalAlignment="Top" Margin="50,104,0,0" Click="ButDelSecond_Click">X</Button>
+        
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="3,3,0,0" BorderBrush="#969696"></Border>
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="2,2,0,0" BorderBrush="#494949"></Border>
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="1,1,0,0" BorderBrush="Black"></Border>
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="0,0,3,3" BorderBrush="#C4C4C4"></Border>
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="0,0,2,2" BorderBrush="#DFDFDF"></Border>
+            <Border Margin="10,30" Grid.Row="3" BorderThickness="0,0,1,1" BorderBrush="#EFEFEF"></Border>
+
+            <Button Name="ButEdit" Width="80" Height="25" VerticalAlignment="Top" FontFamily="Arial" FontSize="11" Click="ButEdit_Click">Редактировать</Button>
+            
+            <ListView Name="LVConn" Width="458" Height="230" FontFamily="Arial">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Name="TBTask" FontWeight="Bold" Margin="0,10" Text="{Binding Task}"></TextBlock>
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel Margin="0,0,20,0">
+                                    <TextBlock Name="TBCol11" Text="{Binding First1}"></TextBlock>
+                                    <TextBlock Name="TBCol12" Text="{Binding First2}"></TextBlock>
+                                    <TextBlock Name="TBCol13" Text="{Binding First3}"></TextBlock>
+
+                                    <TextBlock Margin="0,5,0,0" FontWeight="Bold" Text="Правильный выбор:"></TextBlock>
+                                    <TextBlock Name="TBCorr1" Text="{Binding FirstCorrect}"></TextBlock>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock Name="TBCol21" Text="{Binding Second1}"></TextBlock>
+                                    <TextBlock Name="TBCol22" Text="{Binding Second2}"></TextBlock>
+                                    <TextBlock Name="TBCol23" Text="{Binding Second3}"></TextBlock>
+
+                                    <TextBlock Margin="0,5,0,0" FontWeight="Bold" Text="Правильный выбор:"></TextBlock>
+                                    <TextBlock Name="TBCorr2" Text="{Binding SecondCorrect}"></TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+    </Grid>
+</Page>

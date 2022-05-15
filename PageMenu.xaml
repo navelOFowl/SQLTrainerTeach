@@ -1,0 +1,18 @@
+﻿<Page x:Class="SQLTrainerTeach.PageMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SQLTrainerTeach"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="500"
+      Title="PageMenu" Background="#008083">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Width="150" Height="150" Click="Button_Click" FontSize="20">Теория</Button>
+            <Button Name="ButQuery" Width="150" Height="150" FontSize="20" Click="ButQuery_Click" Margin="0,10">Запросы</Button>
+            <Button Width="150" Height="150" FontSize="20" Click="Button_Click_1">Связи</Button>
+        </StackPanel>
+    </Grid>
+</Page>
