@@ -30,7 +30,7 @@
 
         <StackPanel Margin="25">
             <TextBlock FontFamily="Arial" FontSize="16">Задание</TextBlock>
-            <TextBox Name="TBTask" Width="450" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap"></TextBox>
+            <TextBox Name="TBTask" Height="50" TextWrapping="Wrap"></TextBox>
             <TextBlock FontFamily="Arial" FontSize="16">Запрос</TextBlock>
             <TextBox Name="TBQuery" Width="200" HorizontalAlignment="Left" Height="100" TextWrapping="Wrap"></TextBox>
         </StackPanel>

@@ -25,7 +25,7 @@
         <StackPanel Margin="15" Grid.Row="0" Orientation="Horizontal">
             <StackPanel>
                 <TextBlock FontFamily="Arial" FontSize="18">Вопрос:</TextBlock>
-                <TextBox Name="TBQuest" Width="250" Height="100" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="16">Тест</TextBox>
+                <TextBox Name="TBQuest" Width="250" Height="100" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="16" TextWrapping="Wrap"></TextBox>
             </StackPanel>
             <Button Name="ButCreate" BorderBrush="#F0F0F0" Background="#C0C0C0" FontFamily="Arial" Width="110" Height="40" Margin="50, 0" Click="ButCreate_Click">
                 <Button.Effect>
@@ -37,20 +37,20 @@
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="15" Height="25" Text="1: "></TextBlock>
-                    <TextBox Name="TBAns1" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15">Тест</TextBox>
+                    <TextBox Name="TBAns1" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="15" Height="25" Text="2: "></TextBlock>
-                    <TextBox Name="TBAns2" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15">Тест</TextBox>
+                    <TextBox Name="TBAns2" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="15" Height="25" Text="3: "></TextBlock>
-                    <TextBox Name="TBAns3" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15">Тест</TextBox>
+                    <TextBox Name="TBAns3" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15"></TextBox>
                 </StackPanel>
                 <StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="15" Height="25" Text="4: "></TextBlock>
-                        <TextBox Name="TBAns4" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15">Тест</TextBox>
+                        <TextBox Name="TBAns4" Width="100" Height="25" FontFamily="Arial" HorizontalAlignment="Left" Margin="0, 10" FontSize="15"></TextBox>
                     </StackPanel>
                     <TextBlock FontFamily="Arial">Правильный ответ</TextBlock>
                 </StackPanel>
