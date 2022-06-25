@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SQLTrainerTeach"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="500">
+        Title="SQL Тренажер: Редактор" Height="650" Width="500">
     <Grid>
         <Frame Name="frame"></Frame>
     </Grid>
